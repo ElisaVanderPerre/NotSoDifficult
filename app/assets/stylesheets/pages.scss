@@ -1,0 +1,71 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  //background-color: white;
+  font-family: courier new;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+.menu{
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+.menukleur{
+  color: blue;
+  text-decoration: none;
+}
+.Archief{
+  color: black;
+  font-family: courier new;
+  text-decoration: none;
+  position: absolute;
+  top: 83px;
+  left: 140px
+}
+.namen{
+  text-decoration: none;
+  color: blue;
+}
+.contact{
+  color: black;
+  font-family: courier new;
+  text-decoration: none;
+  position: absolute;
+  top: 102px;
+  left: 140px;
+}
+#footer{
+  display: block;
+  position: fixed;
+  margin-left: auto;
+  bottom: 0;
+}
+#oei{
+    display: none;
+}
+#fout{
+  color: blue;
+}
+#logo{
+  display: none;
+  width: 30%;
+}
+#spotify{
+  display: block;
+  margin-top: 50px;
+}
+.foto{
+  position: absolute;
+  width: 300px;
+  margin-left: 305px;
+  top: 103px;
+}
+.tekst{
+  position: absolute;
+  margin-left: 305px;
+  top: 550px;
+}
