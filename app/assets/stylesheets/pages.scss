@@ -23,7 +23,7 @@ body {
   font-family: courier new;
   text-decoration: none;
   position: absolute;
-  top: 83px;
+  top: 70px;
   left: 140px
 }
 .namen{
@@ -68,4 +68,10 @@ body {
   position: absolute;
   margin-left: 305px;
   top: 550px;
+}
+.clear {
+  font-family: courier new;
+  background-color: white;
+  border: none;
+  color: red;
 }
