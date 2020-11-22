@@ -8,16 +8,18 @@ body {
   margin: 10px;
   margin-bottom: 40px;
 }
+
 .menu{
   color: black;
   text-decoration: none;
   list-style-type: none;
-
 }
+
 .menukleur{
   color: blue;
   text-decoration: none;
 }
+
 .Archief{
   color: black;
   font-family: courier new;
@@ -26,6 +28,7 @@ body {
   top: 70px;
   left: 140px
 }
+
 .namen{
   text-decoration: none;
   color: blue;
@@ -38,40 +41,59 @@ body {
   top: 102px;
   left: 140px;
 }
+
 #footer{
   display: block;
   position: fixed;
   margin-left: auto;
   bottom: 0;
 }
+
 #oei{
     display: none;
 }
+
 #fout{
   color: blue;
 }
+
 #logo{
   display: none;
   width: 30%;
 }
+
 #spotify{
   display: block;
   margin-top: 50px;
 }
-.foto{
-  position: absolute;
-  width: 300px;
-  margin-left: 305px;
-  top: 103px;
-}
+// .foto{
+//   position: absolute;
+//   width: 300px;
+//   margin-left: 305px;
+//   top: 103px;
+// }
+
 .tekst{
   position: absolute;
   margin-left: 305px;
-  top: 550px;
+  margin-right: 10px;
+  top: 600px;
 }
+
 .clear {
   font-family: courier new;
   background-color: white;
   border: none;
   color: red;
+}
+
+.row {
+  position: absolute;
+  margin-left: 305px;
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
 }
