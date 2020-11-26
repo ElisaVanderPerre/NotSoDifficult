@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get '', to: 'pages#index'
+  get 'home', to: 'pages#home'
   get 'shop', to: 'pages#shop'
   get 'archief', to: 'pages#archief'
   get 'contact', to: 'pages#contact'

@@ -1,6 +1,8 @@
 class PagesController < ApplicationController
   def index; end
 
+  def home; end
+
   def shop; end
 
   def archief; end
