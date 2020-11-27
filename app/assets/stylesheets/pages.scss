@@ -1,45 +1,76 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  //background-color: white;
   font-family: courier new;
-  margin: 10px;
-  margin-bottom: 40px;
+  margin: 1vw;
+  margin-bottom: 5vw;
 }
 
-.menu{
+.menu {
   color: black;
   text-decoration: none;
   list-style-type: none;
 }
 
-.menukleur{
+.menu-item {
   color: blue;
   text-decoration: none;
 }
 
-.Archief{
-  color: black;
-  font-family: courier new;
-  text-decoration: none;
-  position: absolute;
-  top: 70px;
-  left: 140px
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.namen{
-  text-decoration: none;
-  color: blue;
+.flex-item1 {
+  width: 5%;
+  padding-left: 2vw;
+  margin: 0;
 }
-.contact{
-  color: black;
-  font-family: courier new;
-  text-decoration: none;
-  position: absolute;
-  top: 102px;
-  left: 140px;
+
+.flex-item2 {
+  width: 15%;
+  margin: 0;
+}
+
+.flex-item3 {
+  width: 75%;
+  margin: 0;
+}
+
+.flex-item-half {
+  flex: 50%;
+  margin: 0;
+}
+
+
+@media(max-width: 1024px) {
+  body {
+    font-size: 38px;
+    margin-top: 1vw;
+  }
+
+  .flex-item1 {
+    padding: 1vw;
+    flex: 25%;
+    padding-left: 2vw;
+    margin: 0;
+  }
+
+  .flex-item2 {
+    padding: 1vw;
+    flex: 65%;
+    margin: 0;
+  }
+
+  .flex-item3 {
+    padding: 1vw;
+    padding-top: 5vw;
+    flex: 100%;
+    margin: 0;
+  }
 }
 
 #footer{
@@ -55,6 +86,7 @@ body {
 
 #fout{
   color: blue;
+  cursor: pointer;
 }
 
 #logo{
@@ -66,12 +98,6 @@ body {
   display: block;
   margin-top: 50px;
 }
-// .foto{
-//   position: absolute;
-//   width: 300px;
-//   margin-left: 305px;
-//   top: 103px;
-// }
 
 .tekst{
   position: absolute;
@@ -99,10 +125,5 @@ body {
 }
 
 .image {
-  width: 300px;
-  margin-left: 305px
-}
-
-.image2 {
   width: 300px;
 }

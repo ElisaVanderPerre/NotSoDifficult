@@ -3,8 +3,6 @@
 
   <head>
     <title> Not So Diffi(cult) </title>
-    <!--<link href="main.css" rel="stylesheet" type="text/css"/>-->
-    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
   </head>
 
   <body>
@@ -13,29 +11,30 @@
     Niet onder constructie
     </p>
 
-
-    <ul class="menu">
-      <li>Home</li>
-      <li><a href="shop" class="menukleur">Shop</a></li>
-      <li><a href="archief" class="menukleur">Archief</a></li>
-      <li><a href="contact" class="menukleur">Contact</a></li>
-    </ul>
+    <div class= "flex-container">
+      <ul class="menu flex-item1">
+        <li>Home</li>
+        <li><a href="shop" class="menu-item">Shop</a></li>
+        <li><a href="archief" class="menu-item">Archief</a></li>
+        <li><a href="contact" class="menu-item">Contact</a></li>
+      </ul>
+    </div>
 
     <p>
-      Welkom op ons onlineplatform!
-    </p>
-    <p>
+      Welkom op ons onlineplatform! <br>
+      <br>
       Luister hier naar een willekeurige playlist,<br>
-      samengesteld door een van onze geïnterviewden.
-    </p>
-    <p>
+      samengesteld door een van onze geïnterviewden.<br>
+      <br>
       Elke week wordt een nieuwe playlist geüpload.<br>
       Ga naar het archief om ze te herbeluisteren.
     </p>
 
-    <a href=""><img src="vraagteken.jpg" alt="fout" id="fout"></a>
+    <img src="vraagteken.jpg" alt="fout" id="fout">
 
-    <p id="oei">oei <br>
+    <p id="oei">
+    oei
+    <br>
           -->
     </p>
 
@@ -68,24 +67,33 @@
           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3f35bd3811f9d7a90b0eedb37_bde0724c85" tabindex="-1" value=""></div>
 
           <div class="clear">
-            <input style="font-family: courier new; background-color: white; outline: none; border-style: none; color: blue; text-decoration: underline;" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" id="subscibe-button" class="button">
+            <input style="font-family: courier new; background-color: white; outline: none; border-style: none; color: blue; cursor: pointer; padding: 0;" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" id="subscibe-button" class="button">
           </div>
         </div>
       </form>
     </div>
     <!--End mc_embed_signup-->
 
-    <!--<script src="jquery-3.3.1.min.js"></script>-->
-    <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
-    <!-- <script scr="main.js"> </script> -->
     <script type="text/javascript">
-      document.getElementById("fout").onmouseover = function() {mouseOver()};
-      document.getElementById("fout").onmouseout = function() {mouseOut()};
-      function mouseOver() {
+      var x = window.matchMedia("(max-width: 1024px)")
+      myFunction(x) // Call listener function at run time
+      x.addListener(myFunction) // Attach listener function on state changes
+
+      function myFunction(x) {
+        if (x.matches) { // If media query matches
+          document.getElementById("fout").onclick = function() {showLogo()};
+        } else {
+          document.getElementById("fout").onmouseover = function() {showLogo()};
+          document.getElementById("fout").onmouseout = function() {hideLogo()};
+        }
+      }
+
+      function showLogo() {
         document.getElementById("oei").style.display = "block";
         document.getElementById("logo").style.display = "block";
       }
-      function mouseOut() {
+
+      function hideLogo() {
         document.getElementById("oei").style.display = "none";
         document.getElementById("logo").style.display = "none";
       }

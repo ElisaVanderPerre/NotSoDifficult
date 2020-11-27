@@ -3,8 +3,6 @@
 
 	<head>
 		<title> Not So Diffi(cult) </title>
-		<link href="main.css" rel="stylesheet" type="text/css"/>
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	</head>
 
 	<body>
@@ -13,38 +11,34 @@
 		Niet onder constructie
 		</p>
 
-		<ul class="menu">
-			<li><a href="home" class="menukleur">Home</a></li>
-			<li><a href="shop" class="menukleur">Shop</a></li>
-			<li>Archief</li>
-			<li><a href="contact" class="menukleur">Contact</a></li>
-		</ul>
+    <div class="flex-container">
+      <ul class="menu flex-item1">
+        <li><a href="home" class="menu-item">Home</a></li>
+        <li><a href="shop" class="menu-item">Shop</a></li>
+        <li>Archief</li>
+        <li><a href="contact" class="menu-item">Contact</a></li>
+      </ul>
 
-		<p class="Archief">
-			<a href="BertVerstreken" class="namen">Bert Verstreken</a><br>
-			IKRAAAN <br>
-			<a href="ArthurBrouns" class="namen">Arthur Brouns</a><br>
-		</p>
+      <ul class="menu flex-item2">
+        <br>
+        <br>
+        <li><a href="BertVerstreken" class="menu-item">Bert Verstreken</a></li>
+        <li>IKRAAAN</li>
+        <li><a href="ArthurBrouns" class="menu-item">Arthur Brouns</a></li>
+      </ul>
 
-    <div class="row">
-      <div class="column">
-        <%= image_tag "ikraaan.jpg", :class => "image2", :alt => "IKRAAAN" %>
-      </div>
+      <div class="flex-item3">
+        <div>
+            <%= image_tag "ikraaan.jpg", :class => "image", :alt => "IKRAAAN" %>
+            <iframe src="https://open.spotify.com/embed/playlist/4AFhf96x3PDPKIvIDzoggu" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
 
-      <div class="column">
-        <iframe src="https://open.spotify.com/embed/playlist/4AFhf96x3PDPKIvIDzoggu" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <p>
+          Prinses glitter in het land der blinden <br><br>
+          Op 18 september, tegen het einde van een broeiende nazomerweek, weerklonk de zwoele stem van IKRAAAN in Antwerpen. Ze was te zien in Permeke; een gewezen garagecomplex aan het Antwerpse De Coninckplein, dat nu omgebouwd is tot bibliotheek en culturele ontmoetingsplaats. Nog voor haar optreden in de bib, treffen we de 22-jarige zangeresperformer in de backstage, die naar een leeg theaterzaaltje leidt. De tribunes zijn er ingeklapt en het felle plafondlicht onthult de kaalte van de ruimte. De onbemande stilte, typerend voor het culturele leven dat op een lager pitje brandt, wordt doorbroken door de rode zetels die we op het podium naar elkaar toe schuiven. Samen met een klein tafeltje vormen ze het decor voor een gesprek met Ikraan Haji, over sterrendom, eigenliefde, het gevaar van fangirlen, en haar geplande debuutalbum bij Fake Records.
+        </p>
       </div>
     </div>
-
-		<p class="tekst">
-			Prinses glitter in het land der blinden <br><br>
-			Op 18 september, tegen het einde van een broeiende nazomerweek, weerklonk de zwoele stem van IKRAAAN in Antwerpen. Ze was te zien in Permeke; een gewezen garagecomplex aan het Antwerpse De Coninckplein, dat nu omgebouwd is tot bibliotheek en culturele ontmoetingsplaats. Nog voor haar optreden in de bib, treffen we de 22-jarige zangeresperformer in de backstage, die naar een leeg theaterzaaltje leidt. De tribunes zijn er ingeklapt en het felle plafondlicht onthult de kaalte van de ruimte. De onbemande stilte, typerend voor het culturele leven dat op een lager pitje brandt, wordt doorbroken door de rode zetels die we op het podium naar elkaar toe schuiven. Samen met een klein tafeltje vormen ze het decor voor een gesprek met Ikraan Haji, over sterrendom, eigenliefde, het gevaar van fangirlen, en haar geplande debuutalbum bij Fake Records.
-		</p>
-
-    <!--  <script src="jquery-3.3.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript" src="main.js"></script>-->
-
   </body>
 
 	<footer id="footer"> 2020 Not So Diffi(cult)</footer>
