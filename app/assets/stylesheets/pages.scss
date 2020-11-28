@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 
 body {
+  font-size: 16px;
   font-family: courier new;
   margin: 1vw;
   margin-bottom: 5vw;
@@ -45,11 +46,26 @@ body {
   margin: 0;
 }
 
+#mc-embedded-subscribe {
+  font-size: 16px;
+  font-family: courier new;
+  background-color: white;
+  border-style: none;
+  color: blue;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
 
 @media(max-width: 1024px) {
   body {
     font-size: 38px;
     margin-top: 1vw;
+  }
+
+  #mc-embedded-subscribe {
+    font-size: 38px;
   }
 
   .flex-item1 {
