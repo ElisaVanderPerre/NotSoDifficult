@@ -29,6 +29,7 @@ iframe {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .footer-right {
   position: fixed;
   bottom: 0;
@@ -78,6 +79,7 @@ iframe {
   body {
     font-size: 38px;
     margin-top: 1vw;
+    margin-bottom: 30vw;
   }
 
   #mc-embedded-subscribe {
@@ -102,6 +104,15 @@ iframe {
     padding-top: 5vw;
     flex: 100%;
     margin: 0;
+  }
+
+  .footer-right {
+    position: fixed;
+    bottom: 10vw;
+    background-color: white;
+  }
+  .footer-left {
+    background-color: white;
   }
 }
 

@@ -9,6 +9,8 @@ class PagesController < ApplicationController
 
   def contact; end
 
+  def email; end
+
   def bert_verstreken; end
 
   def ikraaan; end

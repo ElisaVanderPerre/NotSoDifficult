@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'archief', to: 'pages#archief'
   get 'contact', to: 'pages#contact'
 
+  get 'email', to: 'pages#email'
+
   get 'BertVerstreken', to: 'pages#bert_verstreken'
   get 'IKRAAAN', to: 'pages#ikraaan'
   get 'ArthurBrouns', to: 'pages#arthur_brouns'
