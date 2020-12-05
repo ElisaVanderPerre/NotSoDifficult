@@ -5,7 +5,12 @@ body {
   font-size: 16px;
   font-family: courier new;
   margin: 1vw;
-  margin-bottom: 5vw;
+  margin-bottom: 10vw;
+}
+
+iframe {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }
 
 .menu {
@@ -24,6 +29,17 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.footer-right {
+  position: fixed;
+  bottom: 0;
+  right: 1vw;
+}
+
+.footer-left {
+  position: fixed;
+  bottom: 0;
+}
+
 
 .flex-item1 {
   width: 5%;
@@ -89,13 +105,6 @@ body {
   }
 }
 
-#footer{
-  display: block;
-  position: fixed;
-  margin-left: auto;
-  bottom: 0;
-}
-
 #oei{
     display: none;
 }
@@ -122,11 +131,12 @@ body {
   top: 600px;
 }
 
-.clear {
+.subscribe {
   font-family: courier new;
   background-color: white;
   border: none;
   color: red;
+  margin: 1vw;
 }
 
 .row {
@@ -142,4 +152,8 @@ body {
 
 .image {
   width: 300px;
+}
+
+.mc-field-group {
+  margin: 1vw;
 }
