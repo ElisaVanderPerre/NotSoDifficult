@@ -13,7 +13,7 @@
 
     <div class= "flex-container">
       <ul class="menu flex-item1">
-        <li>Home</li>
+        <li><a href="home" class="menu-item">Home</a></li>
         <li><a href="shop" class="menu-item">Shop</a></li>
         <li><a href="archief" class="menu-item">Archief</a></li>
         <li><a href="contact" class="menu-item">Contact</a></li>
@@ -40,7 +40,11 @@
 
     <%= image_tag "profielfoto2.jpg", :id => "logo", :alt => "logo"%>
 
-    <iframe src="https://open.spotify.com/embed/playlist/4AFhf96x3PDPKIvIDzoggu" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" id="spotify"></iframe>
+    <% spotify_list = ["https://open.spotify.com/embed/playlist/4AFhf96x3PDPKIvIDzoggu", "https://open.spotify.com/embed/playlist/49U3L1X7cflBva5cR9iulI", "https://open.spotify.com/embed/playlist/3mbjWeGPg99r7JpM2EpiYW"] %>
+
+    <% random_spotify = spotify_list.sample %>
+
+    <iframe src= "<%= random_spotify %>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" id="spotify"></iframe>
 
     <script type="text/javascript">
       var x = window.matchMedia("(max-width: 1024px)")
